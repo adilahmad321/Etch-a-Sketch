@@ -4,7 +4,7 @@ var a;
 var bright = 1.0;
 var flag = 0;
 
-var sqrt = prompt("Enter no. of rows: ");
+var sqrt = 50;
 n = sqrt * sqrt;
 
 var height = screen.availHeight - 200;
@@ -122,6 +122,8 @@ divContainer.appendChild(divMaster);
 document.body.appendChild(divContainer);
 
 button.addEventListener("click", clean = () => {
+    var sqrt = prompt("Enter no. of rows: ");
+    n = sqrt * sqrt;
     for (var i = 0; i < n; i++){
         div[i].style.backgroundColor = "lightslategrey";
         div[i].style.filter = "brightness(1.0)";
